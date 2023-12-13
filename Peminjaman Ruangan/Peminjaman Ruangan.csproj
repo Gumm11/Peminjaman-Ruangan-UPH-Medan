@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E104B7D-6B6B-4C4E-B73C-8100CFF60BF1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Peminjaman_Ruangan</RootNamespace>
+    <AssemblyName>Peminjaman Ruangan</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminMenu.Designer.cs" />
+    <Compile Include="frmAdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminMenu.Designer.cs">
+      <DependentUpon>frmAdminMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAllForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAllForm.Designer.cs">
+      <DependentUpon>frmAllForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfirm.Designer.cs">
+      <DependentUpon>frmConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetailRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetailRoom.Designer.cs">
+      <DependentUpon>frmDetailRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMyReserve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMyReserve.Designer.cs">
+      <DependentUpon>frmMyReserve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOTP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOTP.Designer.cs">
+      <DependentUpon>frmOTP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPassAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassAdmin.Designer.cs">
+      <DependentUpon>frmPassAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPendingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPendingForm.Designer.cs">
+      <DependentUpon>frmPendingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReject.Designer.cs">
+      <DependentUpon>frmReject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReject2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReject2.Designer.cs">
+      <DependentUpon>frmReject2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReservedDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservedDetail.Designer.cs">
+      <DependentUpon>frmReservedDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSecurity.Designer.cs">
+      <DependentUpon>frmSecurity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Glb.cs" />
+    <Compile Include="frmReserve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReserve.Designer.cs">
+      <DependentUpon>frmReserve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PanelAll.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelAll.Designer.cs">
+      <DependentUpon>PanelAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelConfirm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelConfirm.Designer.cs">
+      <DependentUpon>PanelConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelSecurity.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelSecurity.Designer.cs">
+      <DependentUpon>PanelSecurity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rectangle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Requests.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Requests.Designer.cs">
+      <DependentUpon>Requests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoundedButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="AdminMenu.resx" />
+    <EmbeddedResource Include="frmAdminMenu.resx">
+      <DependentUpon>frmAdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAllForm.resx">
+      <DependentUpon>frmAllForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfirm.resx">
+      <DependentUpon>frmConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetailRoom.resx">
+      <DependentUpon>frmDetailRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMyReserve.resx">
+      <DependentUpon>frmMyReserve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOTP.resx">
+      <DependentUpon>frmOTP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPassAdmin.resx">
+      <DependentUpon>frmPassAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPendingForm.resx">
+      <DependentUpon>frmPendingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReject.resx">
+      <DependentUpon>frmReject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReject2.resx">
+      <DependentUpon>frmReject2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReserve.resx">
+      <DependentUpon>frmReserve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReservedDetail.resx">
+      <DependentUpon>frmReservedDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSecurity.resx">
+      <DependentUpon>frmSecurity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelAll.resx">
+      <DependentUpon>PanelAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelConfirm.resx">
+      <DependentUpon>PanelConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelSecurity.resx">
+      <DependentUpon>PanelSecurity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Requests.resx">
+      <DependentUpon>Requests.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpenID.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpenID C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\campus-medan %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frame 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frame 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2023-11-11 090503.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2023-11-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2023-06-08 212650 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quit_Button-modified-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-anon-modified.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quit.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
