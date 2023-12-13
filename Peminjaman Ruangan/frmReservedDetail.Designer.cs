@@ -48,6 +48,8 @@
             this.TxtTime = new System.Windows.Forms.TextBox();
             this.ReserveDesc = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.TxtReject = new System.Windows.Forms.TextBox();
+            this.LblReject = new System.Windows.Forms.Label();
             this.Panel111.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Img111)).BeginInit();
             this.panel1.SuspendLayout();
@@ -77,7 +79,7 @@
             // ReserveAssc
             // 
             this.ReserveAssc.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReserveAssc.Location = new System.Drawing.Point(749, 401);
+            this.ReserveAssc.Location = new System.Drawing.Point(748, 383);
             this.ReserveAssc.Name = "ReserveAssc";
             this.ReserveAssc.ReadOnly = true;
             this.ReserveAssc.Size = new System.Drawing.Size(266, 26);
@@ -88,7 +90,7 @@
             this.LstEquipment.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LstEquipment.FormattingEnabled = true;
             this.LstEquipment.ItemHeight = 18;
-            this.LstEquipment.Location = new System.Drawing.Point(748, 229);
+            this.LstEquipment.Location = new System.Drawing.Point(747, 211);
             this.LstEquipment.Name = "LstEquipment";
             this.LstEquipment.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.LstEquipment.Size = new System.Drawing.Size(266, 40);
@@ -99,7 +101,7 @@
             this.UseDate.Enabled = false;
             this.UseDate.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UseDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.UseDate.Location = new System.Drawing.Point(749, 93);
+            this.UseDate.Location = new System.Drawing.Point(748, 75);
             this.UseDate.Name = "UseDate";
             this.UseDate.Size = new System.Drawing.Size(264, 26);
             this.UseDate.TabIndex = 39;
@@ -108,7 +110,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(654, 409);
+            this.label7.Location = new System.Drawing.Point(653, 391);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(79, 18);
             this.label7.TabIndex = 36;
@@ -118,7 +120,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(655, 288);
+            this.label6.Location = new System.Drawing.Point(654, 270);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(91, 18);
             this.label6.TabIndex = 35;
@@ -128,7 +130,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(655, 134);
+            this.label3.Location = new System.Drawing.Point(654, 116);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 18);
             this.label3.TabIndex = 32;
@@ -138,7 +140,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(655, 98);
+            this.label2.Location = new System.Drawing.Point(654, 80);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 18);
             this.label2.TabIndex = 31;
@@ -180,6 +182,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel1.Controls.Add(this.TxtReject);
+            this.panel1.Controls.Add(this.LblReject);
             this.panel1.Controls.Add(this.TxtStatus);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.TxtEmail);
@@ -205,7 +209,7 @@
             // TxtStatus
             // 
             this.TxtStatus.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtStatus.Location = new System.Drawing.Point(749, 447);
+            this.TxtStatus.Location = new System.Drawing.Point(748, 429);
             this.TxtStatus.Name = "TxtStatus";
             this.TxtStatus.ReadOnly = true;
             this.TxtStatus.Size = new System.Drawing.Size(266, 26);
@@ -215,7 +219,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(654, 450);
+            this.label8.Location = new System.Drawing.Point(653, 432);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(95, 18);
             this.label8.TabIndex = 51;
@@ -224,7 +228,7 @@
             // TxtEmail
             // 
             this.TxtEmail.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtEmail.Location = new System.Drawing.Point(749, 364);
+            this.TxtEmail.Location = new System.Drawing.Point(748, 346);
             this.TxtEmail.Name = "TxtEmail";
             this.TxtEmail.ReadOnly = true;
             this.TxtEmail.Size = new System.Drawing.Size(266, 26);
@@ -234,7 +238,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(655, 364);
+            this.label4.Location = new System.Drawing.Point(654, 346);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 18);
             this.label4.TabIndex = 49;
@@ -243,7 +247,7 @@
             // TxtTime
             // 
             this.TxtTime.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTime.Location = new System.Drawing.Point(748, 132);
+            this.TxtTime.Location = new System.Drawing.Point(747, 114);
             this.TxtTime.Multiline = true;
             this.TxtTime.Name = "TxtTime";
             this.TxtTime.ReadOnly = true;
@@ -254,7 +258,7 @@
             // ReserveDesc
             // 
             this.ReserveDesc.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReserveDesc.Location = new System.Drawing.Point(749, 285);
+            this.ReserveDesc.Location = new System.Drawing.Point(748, 267);
             this.ReserveDesc.Multiline = true;
             this.ReserveDesc.Name = "ReserveDesc";
             this.ReserveDesc.ReadOnly = true;
@@ -266,11 +270,33 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(654, 229);
+            this.label5.Location = new System.Drawing.Point(653, 211);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(86, 18);
             this.label5.TabIndex = 34;
             this.label5.Text = "Equipment:";
+            // 
+            // TxtReject
+            // 
+            this.TxtReject.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtReject.Location = new System.Drawing.Point(748, 471);
+            this.TxtReject.Multiline = true;
+            this.TxtReject.Name = "TxtReject";
+            this.TxtReject.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.TxtReject.Size = new System.Drawing.Size(265, 45);
+            this.TxtReject.TabIndex = 54;
+            this.TxtReject.Visible = false;
+            // 
+            // LblReject
+            // 
+            this.LblReject.AutoSize = true;
+            this.LblReject.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblReject.Location = new System.Drawing.Point(612, 483);
+            this.LblReject.Name = "LblReject";
+            this.LblReject.Size = new System.Drawing.Size(133, 18);
+            this.LblReject.TabIndex = 53;
+            this.LblReject.Text = "Rejection Reason:";
+            this.LblReject.Visible = false;
             // 
             // frmReservedDetail
             // 
@@ -314,5 +340,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox TxtStatus;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox TxtReject;
+        private System.Windows.Forms.Label LblReject;
     }
 }

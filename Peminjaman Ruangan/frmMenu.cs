@@ -1,19 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Data.SqlClient;
-using System.Runtime.Remoting.Messaging;
-using System.Globalization;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
-using System.Linq.Expressions;
 using System.Text.RegularExpressions;
-using System.Drawing.Text;
+using System.Windows.Forms;
 
 namespace Peminjaman_Ruangan
 {
@@ -281,9 +272,9 @@ namespace Peminjaman_Ruangan
                 selectedFilters.Add(selectedFilter);
             }
 
-            for (int i=0; i < CLBCampus.Items.Count; i++)
+            for (int i = 0; i < CLBCampus.Items.Count; i++)
             {
-                if(selectedFilter != CLBCampus.Items[i].ToString() && CLBCampus.GetItemChecked(i))
+                if (selectedFilter != CLBCampus.Items[i].ToString() && CLBCampus.GetItemChecked(i))
                 {
                     selectedFilters.Add(CLBCampus.Items[i].ToString());
                 }
@@ -403,7 +394,7 @@ namespace Peminjaman_Ruangan
             List<TimeSpan[]> timeSpans = InsertCLBToList();
             TimeSpan startTime, endTime;
 
-            CmdForm.CommandText =  "SELECT DISTINCT F.Ruangan_Name " +
+            CmdForm.CommandText = "SELECT DISTINCT F.Ruangan_Name " +
                                "FROM Form F " +
                                "JOIN Form_Time FT ON F.FormID = FT.FormID " +
                                "WHERE F.Form_Date = @SelectedDate " +
@@ -485,7 +476,7 @@ namespace Peminjaman_Ruangan
         private void MyReservation_Click(object sender, EventArgs e)
         {
             new frmMyReserve().Show();
-            this.Close ();
+            this.Close();
         }
 
         private void CLBCampus_ItemCheck_1(object sender, ItemCheckEventArgs e)

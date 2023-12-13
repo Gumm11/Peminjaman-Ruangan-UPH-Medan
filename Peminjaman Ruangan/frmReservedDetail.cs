@@ -204,6 +204,10 @@ namespace Peminjaman_Ruangan
                     ReserveAssc.Text = RdForm["User_Associate"].ToString();
                     TxtEmail.Text = RdForm["User_Email"].ToString();
                     string status = RdForm["Room_Approval"].ToString();
+                    string ruanganName = RdForm["Ruangan_Name"].ToString();
+                    SetImage(ruanganName);
+                    Lbl111.Text = ruanganName.StartsWith("1") ? "AD - " + ruanganName : "LP - " + ruanganName
+                    
                     if (status == "0")
                     {
                         status = "Pending";
@@ -215,6 +219,9 @@ namespace Peminjaman_Ruangan
                     else if (status == "2")
                     {
                         status = "Disapproved";
+                        LblReject.Visible = true;
+                        TxtReject.Visible = true;
+                        TxtReject.Text = RdForm["Rejection_Reason"].ToString();
                     }
                     else
                     {
