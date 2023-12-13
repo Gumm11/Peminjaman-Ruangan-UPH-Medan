@@ -213,7 +213,7 @@
             this.PanelSideBar.Controls.Add(this.BtnHomeSide);
             this.PanelSideBar.Location = new System.Drawing.Point(0, 92);
             this.PanelSideBar.Name = "PanelSideBar";
-            this.PanelSideBar.Size = new System.Drawing.Size(57, 637);
+            this.PanelSideBar.Size = new System.Drawing.Size(534, 637);
             this.PanelSideBar.TabIndex = 87;
             this.PanelSideBar.Visible = false;
             // 
