@@ -206,7 +206,7 @@ namespace Peminjaman_Ruangan
                     string status = RdForm["Room_Approval"].ToString();
                     string ruanganName = RdForm["Ruangan_Name"].ToString();
                     SetImage(ruanganName);
-                    Lbl111.Text = ruanganName.StartsWith("1") ? "AD - " + ruanganName : "LP - " + ruanganName
+                    Lbl111.Text = ruanganName.StartsWith("1") ? "AD - " + ruanganName : "LP - " + ruanganName;
                     
                     if (status == "0")
                     {
