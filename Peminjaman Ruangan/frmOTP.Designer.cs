@@ -79,9 +79,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(68, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 25);
+            this.label1.Size = new System.Drawing.Size(169, 25);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Masukan Kode";
+            this.label1.Text = "Enter OTP Code";
             // 
             // InputKodeOTP
             // 
@@ -139,7 +139,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.InputKodeOTP);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmOTP";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Please Input The Code";
