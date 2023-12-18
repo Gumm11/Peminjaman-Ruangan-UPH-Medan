@@ -70,7 +70,9 @@ namespace Peminjaman_Ruangan
             string roomName = Regex.Replace(panelTag, "[^0-9]", "");
 
             SqlCommand CmdForm = Glb.CmdForm;
-            CmdForm.CommandText = "SELECT Ruangan_Capacity, Ruangan_Location FROM Ruangan WHERE Ruangan_Name = " + roomName + ";";
+            CmdForm.CommandText = "SELECT Ruangan_Capacity, Ruangan_Location FROM Ruangan WHERE Ruangan_Name = @roomName";
+            CmdForm.Parameters.Clear();
+            CmdForm.Parameters.AddWithValue("@roomName", roomName);
 
             if (roomName == "503" || roomName == "101" || roomName == "106")
             {

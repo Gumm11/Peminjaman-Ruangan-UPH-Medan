@@ -51,59 +51,55 @@ namespace Peminjaman_Ruangan
             UserEmail = email;
 
             //Email pattern is __.__@uph.edu
-            string emailPattern = @"^[^@\s]+@[^@\s]*uph\.edu$";
-            if (string.IsNullOrEmpty(email) || !Regex.IsMatch(email, emailPattern))
-            {
-                MessageBox.Show("Invalid email format, not a part of institution!", "Error!",
-                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return;
-            }
-            
-            try
-            {
-                try
-                {
-                    // Send OTP from testugasjoshua@gmail.com
-                    string fromEmail = "testugasjoshua@gmail.com";
-                    string toEmail = UserEmail;
-                    string subject = "Kode OTP";
-                    Kode = ArrayToString(RandomNumbers(6));
-                    string body = Kode;
+             string emailPattern = @"^[^@\s]+@[^@\s]*uph\.edu$";
+             if (string.IsNullOrEmpty(email) || !Regex.IsMatch(email, emailPattern))
+             {
+                 MessageBox.Show("Invalid email format, not a part of institution!", "Error!",
+                     MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                 return;
+             }
 
-                    using (SmtpClient smtpClient = new SmtpClient("smtp.gmail.com"))
-                    {
-                        smtpClient.Port = 587;
-                        smtpClient.Credentials = new NetworkCredential(fromEmail, "puhq ingt cxve sydv");
-                        smtpClient.EnableSsl = true;
+             try
+             {
+                 try
+                 {
+                     // Send OTP from testugasjoshua@gmail.com
+                     string fromEmail = "testugasjoshua@gmail.com";
+                     string toEmail = UserEmail;
+                     string subject = "Kode OTP";
+                     Kode = ArrayToString(RandomNumbers(6));
+                     string body = Kode;
 
-                        using (MailMessage mailMessage = new MailMessage(fromEmail, toEmail, subject, body))
-                        {
-                            smtpClient.Send(mailMessage);
-                            MessageBox.Show("OTP sent successfully! Please check your email.");
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Error: {ex.Message}", "Error Sending Email!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
+                     using (SmtpClient smtpClient = new SmtpClient("smtp.gmail.com"))
+                     {
+                         smtpClient.Port = 587;
+                        MessageBox.Show("OTP tidak dapat dikirimkan karena password email pengirim dihilangkan untuk alasan security. Tolong WA saya.")
+                         smtpClient.Credentials = new NetworkCredential(fromEmail, /*Password tidak ada karena alasan security.*/);
+                         smtpClient.EnableSsl = true;
 
-                // Open OTP Form. 
-                frmOTP WindowOtp = new frmOTP();
-                WindowOtp.Show();
-                this.Hide();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
+                         using (MailMessage mailMessage = new MailMessage(fromEmail, toEmail, subject, body))
+                         {
+                             smtpClient.Send(mailMessage);
+                             MessageBox.Show("OTP sent successfully! Please check your email.");
+                         }
+                     }
+                 }
+                 catch (Exception ex)
+                 {
+                     MessageBox.Show($"Error: {ex.Message}", "Error Sending Email!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                     return;
+                 }
 
-            //frmMenu form3 = new frmMenu();
-            //frmAdminMenu form3 = new frmAdminMenu();
-            //frmSecurity form3 = new frmSecurity();
-            //form3.Show();
-            //this.Hide();
+                 // Open OTP Form. 
+                 frmOTP WindowOtp = new frmOTP();
+                 WindowOtp.Show();
+                 this.Hide();
+             }
+             catch (Exception ex)
+             {
+                 MessageBox.Show("Error: " + ex.Message);
+             } 
+
         }
 
         private void BtnQuit_Click(object sender, EventArgs e)
