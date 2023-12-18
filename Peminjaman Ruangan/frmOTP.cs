@@ -86,7 +86,7 @@ namespace Peminjaman_Ruangan
                 using (SmtpClient smtpClient = new SmtpClient("smtp.gmail.com"))
                 {
                     smtpClient.Port = 587;
-                    smtpClient.Credentials = new NetworkCredential(fromEmail, /**/);
+                    smtpClient.Credentials = new NetworkCredential(fromEmail, "puhq ingt cxve sydv");
                     smtpClient.EnableSsl = true;
 
                     using (MailMessage mailMessage = new MailMessage(fromEmail, toEmail, subject, body))

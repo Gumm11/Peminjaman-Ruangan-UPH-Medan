@@ -73,8 +73,8 @@ namespace Peminjaman_Ruangan
                      using (SmtpClient smtpClient = new SmtpClient("smtp.gmail.com"))
                      {
                          smtpClient.Port = 587;
-                        MessageBox.Show("OTP tidak dapat dikirimkan karena password email pengirim dihilangkan untuk alasan security. Tolong WA saya.")
-                         smtpClient.Credentials = new NetworkCredential(fromEmail, /*Password tidak ada karena alasan security.*/);
+                        MessageBox.Show("OTP tidak dapat dikirimkan karena password email pengirim diganti untuk alasan security.");
+                         smtpClient.Credentials = new NetworkCredential(fromEmail, "puhq ingt cxve sydv");
                          smtpClient.EnableSsl = true;
 
                          using (MailMessage mailMessage = new MailMessage(fromEmail, toEmail, subject, body))
