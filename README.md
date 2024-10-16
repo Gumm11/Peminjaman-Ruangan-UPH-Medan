@@ -26,7 +26,7 @@ This project is a desktop-based room booking system developed for Universitas Pe
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/room-booking-system.git
+    git clone https://github.com/Gumm11/Peminjaman-Ruangan-UPH-Medan
     ```
 
 2. Open the project in Visual Studio.
